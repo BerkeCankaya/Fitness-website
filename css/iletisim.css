@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+}
+.başlık a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: white; 
+    margin: 10px 0; 
+}
+.başlık a:hover{
+    color: white;
+}
+.başlık{
+    display: flex;
+    gap: 10px;
+}
+header img{
+    width: 13rem;
+    height:50%; 
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    margin-top: 10px;
+    margin-right: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+nav ul li a:hover{
+    color: red;
+    transition: 0.4s;
+    text-decoration: none;
+}
+header nav ul li.active a{
+	color: red;
+}
+.fa-solid{
+    display: none;
+}
+.nav-toggle{
+    display: none;
+}
+header nav ul .buton{
+	position: fixed; 
+    top: 75px; 
+    left: 95%; 
+    transform: translateX(-50%); 
+    z-index: 9999; 
+    padding: 10px 20px; 
+    background-color: white; 
+    color: black; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+header nav ul .fas{
+	color: black;
+    font-size: 20px;
+}
+.main{
+   position: absolute;
+   top: 200px;
+   width: 100%;
+   height: 500px;
+}
+.main h4{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: black;
+ }
+ .main hr{
+    margin: 0 auto;
+    margin-top: 0px;
+    font-size: 30px;
+    color: black;
+    height: 3px;
+    width: 80px;
+    opacity: 1;
+ }
+.main h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: black;
+ }
+ .main .contact{
+    display: flex;
+    width: 80%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+ }
+ .main .contact h1{
+   font-size: 20px;
+ }
+ .dark-mode{
+	background-color: black;
+	color: #fff;
+}
+.dark-mode .main  h4{
+	color: white;
+}
+.dark-mode .main  hr{
+	color: white;
+}
+.dark-mode .main .contact h1{
+	color: white;
+}
+.dark-mode  #contact{
+	background-color: white;
+}
+.dark-mode  #contact h1{
+	color: black;
+}
+.dark-mode #contact hr{
+	background-color: black;
+}
+.form{
+    width: 100%;
+    height: 800px;
+    background-color: red;
+    position: absolute;
+    top: 700px;
+}
+#contact{
+	background: black;
+	width: 60%;
+	height: 670px;
+	position: relative;
+    top: 700px;
+	padding: 50px;
+	border-radius: 10px;
+   margin: 0 auto;
+}
+#contact h1{
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+}
+#contact hr{
+	width: 100px;
+	height: 3px;
+	background: #fff;
+	text-align: center;
+    margin: 0 auto;
+    opacity: 1;
+}
+#form-container{
+	padding: 0px;
+	margin:0px;
+}
+#form-container form{
+    position: relative;
+    top: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 30%;
+	margin: 0 auto;
+	background: black;
+	padding: 1rem;
+	border-radius: 16px;
+  
+
+}
+#form-container input{
+	padding: 0.5rem;
+	border-radius: 16px;
+}
+#form-container input[type="submit"]{
+	width: 50%;
+	background: red;
+	color: white;
+	padding: 0.5rem 1rem;
+	cursor:pointer;
+	border: none;
+	box-shadow: 1px 1xp 5px black;
+	margin: auto;
+}
+iframe{
+	position: relative;
+	top: 400px;
+}
+.footer{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    margin-top: 600px;
+}
+.footer .logo-footer{
+    width: 40%;
+    height: 100%;
+}
+.footer .logo-footer .baslık-footer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .logo-footer  .for-mobile {
+    display:none;
+}
+.footer .logo-footer .baslık-footer h1{
+    color: white;
+    font-size: 30px;
+}
+.footer .logo-footer .baslık-footer img{
+    width: 10rem;
+    height:60%;
+}
+.footer .logo-footer .social-media{
+    width: 100%;
+    height: 30%;
+}
+.footer .logo-footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.footer .logo-footer .social-media .fab{
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+}
+.footer .logo-footer .social-media .fab:hover{
+    opacity: 0.7;
+}
+.footer .hours-footer{
+    width: 20%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .hours-footer h1{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer .hours-footer h2{
+    font-size: 20px;
+    color: white;
+}
+.footer .contact-footer{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .contact-footer h1{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h2{
+    color: white;
+    font-size: 20px;  
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h3{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h4{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+@media screen and (max-width: 1200px){
+    nav ul{
+        gap: 20px; 
+    }
+    nav ul li a {
+        color: white;
+        font-size: 1rem;
+    }
+    .başlık .logo a{
+        font-size: 1.5rem;
+    }
+    header nav ul .buton{
+        padding: 5px 10px; 
+       
+    }
+    header nav ul .buton i{
+        font-size: 15px;
+       
+    }
+}
+@media screen and (max-width: 992px){
+    header{
+        height: 150px;
+    }
+    nav ul{
+        gap: 15px; 
+        margin-top: 10px;
+    }
+    nav ul li a {
+        color: white;
+        font-size: 0.8rem;
+       
+    }
+    .başlık .logo a{
+        font-size: 1.3rem;
+        color: white; 
+        
+    }
+    header img{
+        width: 6rem;
+        height:50%;  
+    }
+    header nav ul .buton{
+        padding: 5px 10px; 
+       top: 60px;
+       
+    }
+    #contact{
+        width: 60%;
+    }
+    #contact h1{
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+    }
+    #form-container form{
+        position: relative;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 50%;
+        margin: 0 auto;
+        background: black;
+        padding: 1rem;
+        border-radius: 16px;
+      
+    
+    }
+    .footer{
+        height: 250px;
+    }
+    .footer .logo-footer .baslık-footer img{
+        width: 10rem;
+        height: auto;
+    }
+    .footer .logo-footer .baslık-footer h1{
+        font-size: 25px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+    }
+    .footer .logo-footer .baslık-footer{
+        height: 60%;
+    }
+    .footer .logo-footer .social-media{
+        height: 40%;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .footer .hours-footer{
+        padding: 40px;
+    }
+    .footer .hours-footer h1{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .footer .hours-footer h2{
+        font-size: 15px;
+        color: white;
+    }
+    .footer .contact-footer{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .contact-footer h1{
+    font-size: 15px;
+    padding: 5px;
+}
+.footer .contact-footer h2{
+    font-size: 15px;
+}
+.footer .contact-footer h3{
+    font-size: 15px;
+}
+.footer .contact-footer h4{
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 768px){
+    header{
+        background-color: black;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        display: block;
+        height: 150px;
+    }
+    .başlık{
+        padding: 30px;
+    }
+    
+    header img{
+        width: 9rem;
+        height: 50%;
+       
+        
+    }
+    .başlık .logo a{
+        font-size: 1.5rem;
+        color: white; 
+        
+    }
+    nav ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+    }
+    nav ul li{
+        margin-bottom: 1em;
+        margin-right: 1em;
+    }
+    nav{
+        position: absolute;
+        text-align: right;
+        top:  100%;
+        width: 100%;
+        background-color: black;
+        display: none;
+    }
+    nav ul li a {
+        color:white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .nav-toggle{
+        display: none;     
+    }  
+    .nav-toggle:checked ~ nav{
+        display: block;
+    }
+    .fa-solid{
+        display: block;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .fa-solid{
+        color: white;
+        position: absolute;
+        font-size: 1.2rem;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        margin-right: 2em;
+        height: 100%;
+    }
+    header nav ul .buton{
+        padding: 5px 10px; 
+        display: flex;
+        left: 400px;
+       
+    }
+    .main{
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        height: 500px;
+        
+     }
+     .main h4{
+         text-align: center;
+         margin-top: 50px;
+         font-size: 30px;
+         color: black;
+      }
+     .main h1{
+         text-align: center;
+         margin-top: 50px;
+         font-size: 25px;
+         color: black;
+      }
+      .main .contact{
+         width: 80%;
+      }
+      .main .contact h1{
+        font-size: 15px;
+      }
+    #contact{
+        width: 70%;
+    }
+    #contact h1{
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+    }
+    #form-container form{
+        width: 60%;
+    }
+    .footer{
+        margin-top: 650px;
+        height: 250px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .footer .hours-footer{
+        display: none;
+    }
+    .footer .logo-footer{
+        width: 40%;
+    }
+    .footer .logo-footer .baslık-footer{
+        height: 50%;
+    }
+    .footer .logo-footer .social-media{
+        height: 50%;
+    }
+    .footer .logo-footer .baslık-footer img{
+        width: 7rem;
+        margin-left: 20px;
+    }
+    .footer .logo-footer .baslık-footer h1{
+        font-size: 20px;
+    }
+    .footer .contact-footer{
+        width: 60%;
+        text-align: center;
+    }
+    .footer .contact-footer h1{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h2{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h3{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h4{
+        font-size: 17px;
+    }
+   
+}
+
+@media screen and (max-width: 487px){
+    nav ul li a {
+        color: white;
+        font-size: 0.7rem;
+    }
+    header .başlık .logo a{
+        font-size: 1rem;
+        color: white; 
+        
+    }
+    header img{
+        width: 5rem;
+        height:50%;
+        margin: 10px 0;
+    }
+    header{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-solid{
+        color: white;
+        position: absolute;
+        font-size: 1rem;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        margin-right: 1em;
+        height: 100%;
+    }
+    .main{
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        height: 500px;
+        display: block;        
+     }
+     .main h4{
+         text-align: center;
+         margin-top: 50px;
+         font-size: 30px;
+         color: black;
+      }
+     .main h1{
+         text-align: center;
+         margin-top: 50px;
+         font-size: 25px;
+         color: black;
+      }
+      .main .contact{
+         width: 80%;
+      }
+      .main .contact h1{
+        font-size: 15px;
+      }
+    .footer{
+        height: 300px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .footer .hours-footer{
+        display: none;
+    }
+    .footer .logo-footer{
+        width: 100%;
+        height: 100%;
+    }
+    .footer .logo-footer .baslık-footer{
+        width: 100%;
+        height: 40%;
+    }
+    .footer .logo-footer .baslık-footer h1{
+       font-size: 15px;
+    } 
+    .footer .logo-footer .for-mobile{
+        width: 100%;
+        height: 20%;
+        display: block;
+    }
+    .footer .logo-footer .social-media{
+        width: 100%;
+        height: 20%;
+    }
+    .footer .logo-footer .for-mobile h1{
+        display: block;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    .footer .contact-footer{
+        width: 60%;
+        display: none;
+    }
+}

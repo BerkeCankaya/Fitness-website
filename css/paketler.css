@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+}
+.başlık a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: white; 
+    margin: 10px 0; 
+}
+.başlık a:hover{
+    color: white;
+}
+.başlık{
+    display: flex;
+    gap: 10px;
+}
+header img{
+    width: 13rem;
+    height:50%; 
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    margin-top: 10px;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+nav ul li a:hover{
+    color: red;
+    transition: 0.4s;
+    text-decoration: none;
+}
+header nav ul li.active a{
+	color: red;
+}
+.fa-solid{
+    display: none;
+}
+.nav-toggle{
+    display: none;
+}
+.baslık-paketler{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+}
+.hr2{
+   background-color: red;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    opacity: 1;
+    position: relative;
+    top: 250px;
+}
+
+.paketler{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    justify-content: space-around;
+    margin-top: 400px;
+}
+.paketler .boards{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+.paketler .boards .up-boards ul li{
+    text-align: left;
+    color: white;
+    font-size: 15px;
+}
+.paketler .boards .up-boards{
+    height: 80%;
+    width: 100%;
+    padding: 50px;
+}
+.paketler .boards .up-boards .logo h1{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px;     
+}
+.paketler .boards .under-boards{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.paketler .boards .under-boards h3{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.paketler .boards .under-boards span{
+    margin-top: 30px;
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+    text-decoration: line-through;
+}
+.paketler .boards .under-boards button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.paketler .boards .under-boards button a:hover{
+    opacity: 0.7;
+}
+.paketler .boards .under-boards button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: red;
+    margin-bottom: 50px;
+}
+.footer{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+}
+.footer .logo-footer{
+    width: 40%;
+    height: 100%;
+}
+.footer .logo-footer .baslık-footer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .logo-footer  .for-mobile {
+    display:none;
+}
+.footer .logo-footer .baslık-footer h1{
+    color: white;
+    font-size: 30px;
+}
+.footer .logo-footer .baslık-footer img{
+    width: 10rem;
+    height:60%;
+}
+.footer .logo-footer .social-media{
+    width: 100%;
+    height: 30%;
+}
+.footer .logo-footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.footer .logo-footer .social-media .fab{
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+}
+.footer .logo-footer .social-media .fab:hover{
+    opacity: 0.7;
+}
+.footer .hours-footer{
+    width: 20%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .hours-footer h1{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer .hours-footer h2{
+    font-size: 20px;
+    color: white;
+}
+.footer .contact-footer{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .contact-footer h1{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h2{
+    color: white;
+    font-size: 20px;  
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h3{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h4{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 1200px){
+    nav ul{
+        gap: 30px; 
+    }
+    nav ul li a {
+        color: white;
+        font-size: 1.1rem;
+    }
+    .başlık .logo a{
+        font-size: 1.7rem;
+    }
+    .paketler .boards .up-boards ul li{
+        font-size: 13px;
+    }
+    .paketler .boards .up-boards .logo h1{
+            font-size: 25px;
+    }
+    .paketler .boards .under-boards button a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    header{
+        height: 150px;
+    }
+    nav ul{
+        gap: 15px; 
+        margin-top: 10px;
+    }
+    nav ul li a {
+        color: white;
+        font-size: 0.9rem;
+       
+    }
+    .başlık .logo a{
+        font-size: 1.5rem;
+        color: white; 
+        
+    }
+    header img{
+        width: 8rem;
+        height:50%;  
+    }
+    .paketler .boards .up-boards ul li{
+        font-size: 12px;
+    }
+    .paketler .boards .up-boards{
+      padding: 10px;
+    }
+    .paketler .boards .up-boards .logo h1{
+            font-size: 23px;
+    }
+    .paketler .boards .under-boards button a{
+        font-size: 12px;
+    }
+    .paketler{
+       height: 450px;
+    }
+    .paketler .boards .under-boards h3{
+       font-size: 20px;
+    }
+    .paketler .boards .under-boards span{
+       font-size: 15px;
+    }
+    .paketler .boards .under-boards button{
+        padding: 7px;
+    }
+    .paketler .boards .under-boards button a{
+        font-size: 12px;
+    }
+    .footer{
+        height: 250px;
+       
+    }
+    .footer .logo-footer .baslık-footer img{
+        width: 10rem;
+        height: auto;
+    }
+    .footer .logo-footer .baslık-footer h1{
+        font-size: 25px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+    }
+    .footer .logo-footer .baslık-footer{
+        height: 60%;
+    }
+    .footer .logo-footer .social-media{
+        height: 40%;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .footer .hours-footer{
+        padding: 40px;
+    }
+    .footer .hours-footer h1{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .footer .hours-footer h2{
+        font-size: 15px;
+        color: white;
+    }
+    .footer .contact-footer{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .contact-footer h1{
+    font-size: 15px;
+    padding: 5px;
+}
+.footer .contact-footer h2{
+    font-size: 15px;
+}
+.footer .contact-footer h3{
+    font-size: 15px;
+}
+.footer .contact-footer h4{
+    font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+    header{
+        background-color: black;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        display: block;
+        height: 150px;
+    }
+    .başlık{
+        padding: 30px;
+    }
+    
+    header img{
+        width: 9rem;
+        height: 50%;
+       
+        
+    }
+    .başlık .logo a{
+        font-size: 1.5rem;
+        color: white; 
+        
+    }
+    nav ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+    }
+    nav ul li{
+        margin-bottom: 1em;
+        margin-right: 1em;
+    }
+    nav{
+        position: absolute;
+        text-align: right;
+        top:  100%;
+        width: 100%;
+        background-color: black;
+        display: none;
+    }
+    nav ul li a {
+        color:white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .nav-toggle{
+        display: none;     
+    }  
+    .nav-toggle:checked ~ nav{
+        display: block;
+    }
+    .fa-solid{
+        display: block;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .fa-solid{
+        color: white;
+        position: absolute;
+        font-size: 1.2rem;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        margin-right: 2em;
+        height: 100%;
+    }
+    .paketler{
+        display: block;
+    }
+    .paketler .boards{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 100px;
+        height: 500px;
+    }
+    .paketler .boards
+    .up-boards ul li{
+        font-size: 15px;
+    }
+    .footer{
+        margin-top: 1500px;
+        height: 250px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    .footer .hours-footer{
+        display: none;
+    }
+    .footer .logo-footer{
+        width: 40%;
+    }
+    .footer .logo-footer .baslık-footer{
+        height: 50%;
+    }
+    .footer .logo-footer .social-media{
+        height: 50%;
+    }
+    .footer .logo-footer .baslık-footer img{
+        width: 7rem;
+        margin-left: 20px;
+    }
+    .footer .logo-footer .baslık-footer h1{
+        font-size: 20px;
+    }
+    .footer .contact-footer{
+        width: 60%;
+        text-align: center;
+    }
+    .footer .contact-footer h1{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h2{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h3{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h4{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 487px){
+    nav ul li a {
+        color: white;
+        font-size: 0.7rem;
+    }
+    header .başlık .logo a{
+        font-size: 1rem;
+        color: white; 
+        
+    }
+    header img{
+        width: 5rem;
+        height:50%;
+        margin: 10px 0;
+    }
+    header{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-solid{
+        color: white;
+        position: absolute;
+        font-size: 0.7rem;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        margin-right: 1em;
+        height: 100%;
+    }
+    .paketler{
+        display: block;
+        margin-top: 300px;
+    }
+    .paketler .boards{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 150px;
+        height: 500px;
+    }
+    .paketler .boards
+    .up-boards ul li{
+        font-size: 13px;
+    }
+    .footer{
+        height: 200px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .footer .hours-footer{
+        display: none;
+    }
+    .footer .logo-footer{
+        width: 100%;
+        height: 100%;
+    }
+    .footer .logo-footer .baslık-footer{
+        width: 100%;
+        height: 40%;
+    }
+    .footer .logo-footer .baslık-footer h1{
+       font-size: 15px;
+    } 
+    .footer .logo-footer .for-mobile{
+        width: 100%;
+        height: 20%;
+        display: block;
+    }
+    .footer .logo-footer .social-media{
+        width: 100%;
+        height: 20%;
+    }
+    .footer .logo-footer .for-mobile h1{
+        display: block;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    .footer .contact-footer{
+        width: 60%;
+        display: none;
+    }
+}

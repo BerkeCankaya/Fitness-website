@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+}
+.başlık a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: white; 
+    margin: 10px 0; 
+}
+.başlık a:hover{
+    color: white;
+}
+.başlık{
+    display: flex;
+    gap: 10px;
+}
+header img{
+    width: 13rem;
+    height:50%; 
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    margin-top: 10px;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+nav ul li a:hover{
+    color: red;
+    transition: 0.4s;
+    text-decoration: none;
+}
+header nav ul li.active a{
+	color: red;
+}
+.fa-solid{
+    display: none;
+}
+.nav-toggle{
+    display: none;
+}
+.main{
+	height: 1400px;
+	background-image: url('../img/hakkımızda_arka\ plan.webp'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position-x: center;
+	background-position-y: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+.main .card{
+        width:40%;
+        height: auto;
+        background-color: black;
+        border-radius: 10px;
+        opacity: 0.7;
+        padding: 50px; 
+        margin-top: 150px;    
+}
+.main .card h1{
+    color: white;
+    font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    opacity: 1;
+}
+.main .card hr{
+    font-weight: bold;
+	width: 100px;
+	height: 2px;
+	background: #fff;
+    margin: 0 auto;
+    opacity: 1;
+}
+.main .card p{
+    color: #fff;
+	font-size: 20px;
+	text-align: left;
+    opacity: 1;
+    margin-top: 20px;
+
+}
+.footer{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+.footer .logo-footer{
+    width: 40%;
+    height: 100%;
+}
+.footer .logo-footer .baslık-footer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .logo-footer  .for-mobile {
+    display:none;
+}
+.footer .logo-footer .baslık-footer h1{
+    color: white;
+    font-size: 30px;
+}
+.footer .logo-footer .baslık-footer img{
+    width: 10rem;
+    height:60%;
+}
+.footer .logo-footer .social-media{
+    width: 100%;
+    height: 30%;
+}
+.footer .logo-footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.footer .logo-footer .social-media .fab{
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+}
+.footer .logo-footer .social-media .fab:hover{
+    opacity: 0.7;
+}
+.footer .hours-footer{
+    width: 20%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .hours-footer h1{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer .hours-footer h2{
+    font-size: 20px;
+    color: white;
+}
+.footer .contact-footer{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .contact-footer h1{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h2{
+    color: white;
+    font-size: 20px;  
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h3{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.footer .contact-footer h4{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    nav ul{
+        gap: 30px; 
+    }
+    nav ul li a {
+        color: white;
+        font-size: 1.1rem;
+    }
+    .başlık .logo a{
+        font-size: 1.7rem;
+    }
+    .main .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    header{
+        height: 150px;
+    }
+    nav ul{
+        gap: 15px; 
+        margin-top: 10px;
+    }
+    nav ul li a {
+        color: white;
+        font-size: 0.9rem;
+       
+    }
+    .başlık .logo a{
+        font-size: 1.5rem;
+        color: white; 
+        
+    }
+    header img{
+        width: 8rem;
+        height:50%;  
+    }
+    .main .card h1 {
+        font-size: 25px;
+    }
+    .main .card p {
+        font-size: 15px;
+    }
+    .footer{
+        height: 250px;
+    }
+    .footer .logo-footer .baslık-footer img{
+        width: 10rem;
+        height: auto;
+    }
+    .footer .logo-footer .baslık-footer h1{
+        font-size: 25px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+    }
+    .footer .logo-footer .baslık-footer{
+        height: 60%;
+    }
+    .footer .logo-footer .social-media{
+        height: 40%;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .footer .hours-footer{
+        padding: 40px;
+    }
+    .footer .hours-footer h1{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .footer .hours-footer h2{
+        font-size: 15px;
+        color: white;
+    }
+    .footer .contact-footer{
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+}
+.footer .contact-footer h1{
+    font-size: 15px;
+    padding: 5px;
+}
+.footer .contact-footer h2{
+    font-size: 15px;
+}
+.footer .contact-footer h3{
+    font-size: 15px;
+}
+.footer .contact-footer h4{
+    font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+    header{
+        background-color: black;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        display: block;
+        height: 150px;
+    }
+    .başlık{
+        padding: 30px;
+    }
+    
+    header img{
+        width: 9rem;
+        height: 50%;
+       
+        
+    }
+    .başlık .logo a{
+        font-size: 1.5rem;
+        color: white; 
+        
+    }
+    nav ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+    }
+    nav ul li{
+        margin-bottom: 1em;
+        margin-right: 1em;
+    }
+    nav{
+        position: absolute;
+        text-align: right;
+        top:  100%;
+        width: 100%;
+        background-color: black;
+        display: none;
+    }
+    nav ul li a {
+        color:white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .nav-toggle{
+        display: none;     
+    }  
+    .nav-toggle:checked ~ nav{
+        display: block;
+    }
+    .fa-solid{
+        display: block;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .fa-solid{
+        color: white;
+        position: absolute;
+        font-size: 1.2rem;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        margin-right: 2em;
+        height: 100%;
+    }
+    .footer{
+        margin-top: 0px;
+        height: 250px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .footer .hours-footer{
+        display: none;
+    }
+    .footer .logo-footer{
+        width: 40%;
+    }
+    .footer .logo-footer .baslık-footer{
+        height: 50%;
+    }
+    .footer .logo-footer .social-media{
+        height: 50%;
+    }
+    .footer .logo-footer .baslık-footer img{
+        width: 7rem;
+        margin-left: 20px;
+    }
+    .footer .logo-footer .baslık-footer h1{
+        font-size: 20px;
+    }
+    .footer .contact-footer{
+        width: 60%;
+        text-align: center;
+    }
+    .footer .contact-footer h1{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h2{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h3{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footer .contact-footer h4{
+        font-size: 17px;
+    }
+
+}
+@media screen and (max-width: 650px){
+    .main .card{
+        width: 70%;
+    }
+    .main .card h1 {
+        font-size: 20px;
+    }
+    .main .card p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 487px){
+    nav ul li a {
+        color: white;
+        font-size: 0.7rem;
+    }
+    header .başlık .logo a{
+        font-size: 1rem;
+        color: white; 
+        
+    }
+    header img{
+        width: 5rem;
+        height:50%;
+        margin: 10px 0;
+    }
+    header{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-solid{
+        color: white;
+        position: absolute;
+        font-size: 0.7rem;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        margin-right: 1em;
+        height: 100%;
+    }
+    .main{
+        
+    }
+    .main .card{
+        width: 80%;
+    }
+    .main .card h1{
+        font-size: 25px;
+    }
+    .main .card p{
+        font-size: 10px;
+    }
+    .main .card p span{
+        font-size: 10px;
+    }
+    .footer{
+        height: 200px;
+    }
+    .footer .logo-footer .social-media .fab{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .footer .hours-footer{
+        display: none;
+    }
+    .footer .logo-footer{
+        width: 100%;
+        height: 100%;
+    }
+    .footer .logo-footer .baslık-footer{
+        width: 100%;
+        height: 40%;
+    }
+    .footer .logo-footer .baslık-footer h1{
+       font-size: 15px;
+    } 
+    .footer .logo-footer .for-mobile{
+        width: 100%;
+        height: 20%;
+        display: block;
+    }
+    .footer .logo-footer .social-media{
+        width: 100%;
+        height: 20%;
+    }
+    .footer .logo-footer .for-mobile h1{
+        display: block;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    .footer .contact-footer{
+        width: 60%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .main .card{
+        width: 90%;
+    }
+    .main .card p span{
+        font-size: 10px;
+        display: none;
+    }
+    .main .card h1{
+        font-size: 15px;
+    }
+}

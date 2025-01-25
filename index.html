@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GymYaka Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="başlık">
+        <img src="img/gymlogo.png.png" alt="">
+        <h1 class="logo"><a href="">GymYaka<br>Fitness</a></h1>
+        
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+    <i class="fa-solid fa-bars"></i>
+</label>
+        <nav>
+            <ul>
+                <li class="active" ><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li> 
+                <li><a href="paketler.html">Paketler</a></li> 
+                <li><a href="egitmenlerimiz.html">Eğitmenlerimiz</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).on('click', 'ul li', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		</script>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators custom-carousel-indicators"> <!-- custom-carousel-indicators sınıfı eklendi -->
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/resim1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/resim2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/resim3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+            
+    <div class="main"><h3>Hizmetler</h3>
+        <hr class="hr"></hr></div>
+    <div class="section">
+        <div class="first-section">
+            <img src="img/havuzz.jpg" alt="">
+            <h1>Havuz</h1>
+            <p>Fitness merkezimiz, sağlıklı bir yaşam tarzı için gerekli
+                olan birçokfarklı aktiviteyi sunuyor.Bu aktivitelerden
+                biri de olimpik havuzumuzdur. Olimpik havuzumuz,
+                profesyonel yüzücülerin ve dalışçıların antrenman
+                yapabileceği standartlara uygun olarak inşa edilmiş
+                bir yüzme havuzudur.Havuzumuz 50 metre
+                uzunluğunda ve 25 metre genişliğindedir ve 10 adet
+                2.5 metre uzunluğunda yarışma kulvarı içermektedir.
+                Her kulvarın genişliği 2.5 metre olup,derinlik en az 
+                1.35 metre, en fazla ise 3 metre olarak
+                ayarlanmıştır.</span>
+            
+            </p>
+        </div>
+        <div class="first-section">
+            <img src="img/salon.jpg" alt="">
+            <h1>Salon</h1>
+            <p> Salonumuz, sağlıklı bir yaşam tarzı sürdürmek isteyen
+                herkes için mükemmel bir seçenektir.Salonumuzda,
+                geniş bir yelpazede fitness ekipmanları sunuyoruz.
+                Hem kardiyo hem de güç antrenmanı için tam
+                donanımlı bir fitness merkezimiz var.Salonumuzda
+                hijyen ve temizlik çok önemlidir. Ekipmanlarımız her
+                kullanımdan sonra düzenli olarak dezenfekte edilir
+                ve salonumuzun her köşesi temiz tutulur. Böylece,
+                rahatlıkla spor yapabilir ve hijyenik bir ortamda
+                zaman geçirebilirsiniz.</span></p>
+        </div>
+        <div class="first-section">
+            <img src="img/pt1.jpg" alt="">
+            <h1>Fiyatlar</h1>
+            <p>Müşteri memnuniyeti bizim için önceliklidir ve
+                fiyatlandırma stratejimizi bu doğrultuda belirliyoruz.
+                Amacımız, müşterilerimize uygun fiyatlarla kaliteli
+                hizmet sunarak, onların sağlıklı bir yaşam tarzı
+                sürdürmelerine destek olmaktır.Salonumuzu ziyaret
+                ederek, fiyatlarımızı detaylı bir şekilde öğrenebilir ve
+                sizin için en uygun üyelik seçeneğini belirleyebilirsiniz.
+                Eğitmenlerimiz de size en uygun üyelik seçeneğini
+                önermek için her zaman hazırdır.</span> </p>
+        </div>
+    </div>
+    <div class="second-section">
+
+        <div class="child-section"></div>
+        <div class="right-section">
+            <h1>Vücudunuza iyi bakın.Yaşamak zorunda olduğunuz tek yer orasıdır.
+              <br><br> <span>- Jim Rohn</span>
+              </h1>
+        </div>
+    </div>
+    <div class="third-section">
+        <div class="child-section2">
+            <h1>
+				Fit olmak bir hedef değil, <br><span>Yaşam biçimidir.</span>
+			</h1>
+        </div>
+        <div class="right-section2"></div>
+    </div>
+    
+    <div class="info">
+        <h1>Uzman Antrenörlerimiz ile hedeflerinize daha hızlı bir şekilde ulaşın.
+            <br><span>Bahane üretmek saatte sıfır kalori yakar.</span></h1>
+
+            <div class="button">
+            <button><a href="paketler.html">Bilgi Alın</a></button>
+             </div>
+    </div>
+
+            <h4 class="baslık-paketler">Paketler</h4>
+            <hr class="hr2"></hr>
+
+    <div class="paketler">
+        <div class="boards">
+            <div class="up-boards">
+                <div class="logo">
+            <h1>Bronz Paket</h1></div>
+            <ul>
+                <li>Grup Derslerine Erken Rezervasyon – 2 Gün</li>
+                <li>2 Kişi ile Ölçüm ve Program</li>
+                <li>Üye Olunan Kulübü Sınırsız Kullanım</li>
+                <li>3 Ayda 1 Kez Misafir Getirebilme</li>
+             </ul> 
+            </div>
+            <div class="under-boards">
+                <h3><span>800 TL</span><br>600 TL
+                </h3>
+                <button><a href="paketler.html">Bilgi Alın</a></button>
+            </div>
+        </div>
+        <div class="boards">
+            <div class="up-boards">
+                <div class="logo">
+            <h1>Silver Paket</h1></div>
+             <ul>
+                <li>Grup Derslerine Erken Rezervasyon – 3 Gün</li>
+                <li>2 Kişi ile Ölçüm ve Program</li>
+                <li>Üye Olunan Kulübü Sınırsız Kullanım</li>
+                <li>Kişiye Özel Fitness Programı + Beslenme Programı</li>
+                <li>Ayda 1 Kez Misafir Getirebilme</li>
+             </ul>   
+            </div>
+            <div class="under-boards">
+                <h3><span>800 TL</span><br>600 TL
+                </h3>
+                <button><a href="paketler.html">Bilgi Alın</a></button>
+            </div>
+            
+        </div>
+        <div class="boards">
+            <div class="up-boards">
+                <div class="logo">
+            <h1>Gold Paket</h1></div>
+            <ul>
+                <li>Grup Derslerine Erken Rezervasyon – 4 Gün</li>
+                <li>2 Kişi ile Ölçüm ve Program</li>
+                <li>Üye Olunan Kulübü Sınırsız Kullanım</li>
+                <li>Kişiye Özel Fitness Programı + Beslenme Programı</li>
+                <li>Özel Derslerde %25 İndirim</li>
+                <li>Kişiye Özel Ölçüm</li>
+                <li>Ayda 1 Kez Misafir Getirebilme</li>
+             </ul> 
+            </div>
+            <div class="under-boards">
+                <h3><span>800 TL</span><br>600 TL
+                </h3>
+                <button><a href="paketler.html">Bilgi Alın</a></button>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="logo-footer">
+            <div class="baslık-footer">
+            <img src="img/gymlogo.png.png" alt="">
+            <h1>GymYaka <br>Fitness</h1>
+            </div>
+            <div class="for-mobile">
+                <h1>Bizi Takip Edin</h1>
+            </div>
+            <div class="social-media">
+            <a href="https://www.facebook.com/berke.cankaya.167"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/_berkecnky/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/b3rke_35"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCj2TLbrt2X-lDL3NLYU6JeA"> <i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="hours-footer">
+
+            <h1>Çalışma Saatleri</h1>
+            <h2>Hafta-İçi<br>
+                12.00-22.00</h2>
+            <h2>Hafta-Sonu<br>
+                13.00-19.00</h2>
+        </div>
+        <div class="contact-footer">            
+                <h4>İletişim</h4>     
+                <h1><i class="fa-regular fa-envelope"></i>      Mail : GymYaka35@gmail.com</h1>
+                <h2><i class="fas fa-phone"></i>                Telefon : 0547 043 3278</h2>
+                <h3> <i class="fas fa-map-marker-alt"></i>      Adres : Bostanlı, 1671. Sk. 191/A,<br> 35560 Karşıyaka/İzmir</h3>
+
+        </div>
+      
+           
+           
+
+                
+
+        
+                
+     
+    </div>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
